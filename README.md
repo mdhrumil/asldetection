@@ -1,4 +1,4 @@
-# ASL Detection - American sign detection & translation.
+# ASL Detection - American sign language detection & translation.
 
 ## Description
 
