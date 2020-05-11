@@ -135,35 +135,6 @@ def main():
 
     end = time.time()
 
-
-    """
-    shuffleIndexTrain = list(range(len(train_images)))
-    shuffleIndexTest = list(range(len(test_images)))
-
-    shuffle(shuffleIndexTrain)
-    shuffle(shuffleIndexTest)
-
-    for i in shuffleIndexTrain:
-        train_images_shuffled.append(train_images[i])
-        train_labels_shuffled.append(train_labels[i])
-
-    for i in shuffleIndexTest:
-        test_images_shuffled.append(test_images[i])
-        test_labels_shuffled.append(test_labels[i])
-
-
-    train_data = np.array(train_images_shuffled)
-    test_data = np.array(test_images_shuffled)
-
-    with bz2.BZ2File(dumpPATH + "trainData_compressed", "wb") as f:
-        pkl.dump([train_data, train_labels_shuffled], f, protocol = 4)
-
-    with bz2.BZ2File(dumpPATH + "testData_compressed", "wb") as f:
-        pkl.dump([test_data, test_labels_shuffled], f, protocol = 4)
-
-    end = time.time()
-    """
-
     print("Training and testing binaries written successfully in {} seconds.".format((end - start)))
 
 
